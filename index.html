@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gloss Maker</title>
+</head>
+<body>
+  <form id="text-analysis">
+    <div class="language-selectors">
+      <select id="from">
+        <option value="es">Spanish</option>
+        <option value="from">select language</option>
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+        <option value="French">French</option>
+        <option value="de">German</option>
+        <option value="ru">Russian</option>
+      </select>
+      <span class="arrow">&#8658;<span>
+      <select id="to">
+        <option value="en">English</option>
+        <option value="to">select language</option>
+        <option value="English">English</option>
+        <option value="es">Spanish</option>
+        <option value="French">French</option>
+        <option value="German">German</option>
+        <option value="Russian">Russian</option>
+      </select>
+    </div>
+    <textarea rows="20" cols="40" id="text-input">El Servicio Secreto de Estados Unidos hizo un anuncio muy particular este martes: está tomando las acciones correspondientes contra una agente que en su perfil de Facebook sugirió que no defendería al presidente Donald Trump si alguien trataba de dispararle. </textarea><br>
+    <input id="sub" type="submit" value="Gloss it!"/>
+  </form>
+  <div class="glossed-output">
+
+  </div>
+</body>
+</html>
