@@ -1,0 +1,5 @@
+https://api.jquery.com/jquery.when/
+
+var promises = []; for (var i = 0; i < 10; i++) { promises.push(new Promise(function(resolve, reject) { $.ajax('foo.com', { success: function(data) { resolve(data); }, failure: function(err) { reject(err); } }); })); } Promise.all(promises).then(function(values) { }); $.when($.ajax(), $.ajax()).then(function(value1, value2) { });
+
+http://api.jquery.com/jQuery.ajax/#jqXHR 

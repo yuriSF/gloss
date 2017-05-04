@@ -1,6 +1,7 @@
 
 
 <!DOCTYPE html>
+
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="app.js"></script>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -10,33 +11,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Gloss Maker</title>
+  <title>GlossMaker</title>
 </head>
+<header>
+  <div class='app'>
+    <p class="title">
+      GlossMaker
+    </p>
+    <p class="subtext">
+      This application generates word-for-word translations.
+    </p>
+</div>
+</header>
 <body>
   <form id="text-analysis">
     <div class="language-selectors">
-      <select id="from">
-        <option value="es">Spanish</option>
+       <select id="from">
         <option value="from">select language</option>
-        <option value="English">English</option>
-        <option value="Spanish">Spanish</option>
-        <option value="French">French</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
         <option value="de">German</option>
         <option value="ru">Russian</option>
       </select>
       <span class="arrow">&#8658;<span>
       <select id="to">
-        <option value="en">English</option>
         <option value="to">select language</option>
-        <option value="English">English</option>
+        <option value="en">English</option>
         <option value="es">Spanish</option>
-        <option value="French">French</option>
-        <option value="German">German</option>
-        <option value="Russian">Russian</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="ru">Russian</option>
       </select>
     </div>
-    <textarea rows="20" cols="40" id="text-input">El Servicio Secreto de Estados Unidos hizo un anuncio muy particular este martes: está tomando las acciones correspondientes contra una agente que en su perfil de Facebook sugirió que no defendería al presidente Donald Trump si alguien trataba de dispararle. </textarea><br>
+    <p class="subtext">
+      Enter text to gloss
+    </p>
+    <textarea id="text-input"> </textarea><br>
     <input id="sub" type="submit" value="Gloss it!"/>
+    <span class="error">Did you select a language pair?</span>
+  <div class="yandex">
+    <p class="yandex-label">  Powered by </p>
+    <img id="yandex-image" src="https://res.cloudinary.com/crunchbase-production/image/upload/v1397750426/5fc979b30bf888a44075eac200086c1d.png">
+  </div>
   </form>
   <div class="glossed-output">
 

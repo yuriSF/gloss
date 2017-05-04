@@ -1,30 +1,75 @@
-body {
-  padding-top: 40px;
-  padding-left: 100px;
-  padding-bottom: 60px;
-  padding-right: 20px;
+header {
+  margin-top: -2%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-top-style: solid;
+  border-top-color: grey;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
 }
 
-iframe {
-  padding-top: 30px;
+.title {
+  margin: 0;
+}
+
+.app{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.explanation {
+  height: 40px;
+  margin-top: 0;
+  font-size: small;
+  color: #A9A9A9;
+  margin:0;
+}
+
+body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+h1 {
+  font-size: 100%;
+  text-align: center;
+  font-family: Roboto;
 }
 
 form {
   display: inline-block;
   margin-bottom: 10px;
+  width: 300px;
 }
 
-.glossed-output{
-  display: inline-block;
-  vertical-align: top;
-  width: 40%;
-  margin-left: 20px;
+.language-selectors {
   font-family: Roboto;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+
+.language-box {
+  border: solid #FF0000;
+}
+
+.arrow {
+  font-size: larger;
 }
 
 .subtext {
   font-size: small;
   color: #A9A9A9;
+  margin:0;
+}
+
+textarea {
+  width: inherit;
+  height: 400px;
+  font-family: Roboto;
+  font-size: normal;
 }
 
 #submit {
@@ -36,12 +81,37 @@ form {
   font-size: large;
 }
 
-.language-selectors {
-  margin-bottom: 20px;
+.error {
+  display: none;
+  color: #FF0000;
+  font-size: 70%;
 }
 
-.arrow {
-  font-size: larger;
+.yandex {
+  margin-top: 20px;
+}
+
+#yandex-image {
+  height: 20%;
+  width: 20%;
+}
+
+.yandex-label {
+  vertical-align: middle;
+  padding-bottom: 15px;
+}
+
+#yandex-image, .yandex-label {
+  display: inline;
+}
+
+.glossed-output{
+  margin-top: -1%;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  margin-left: 80px;
+  font-family: Roboto;
 }
 
 .tooltip {
@@ -72,10 +142,7 @@ form {
     padding: 5px;
 }
 
-textarea {
-  font-family: Roboto;
-  font-size: normal;
-}
+
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
@@ -85,8 +152,48 @@ textarea {
 .instructions {
   color: #fff;
   font-family: Arial;
-  background-color: black;
+  background-color:  #85c1e9;
   padding: 10px;
   text-align: center;
   font-size: small;
+}
+
+.blink {
+  color: #006400;
+  font-size: 200%;
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
 }
